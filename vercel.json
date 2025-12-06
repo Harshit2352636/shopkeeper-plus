@@ -3,11 +3,6 @@
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "nextjs",
-  "env": {
-    "POSTGRES_URL": "@postgres_url",
-    "AUTH_SECRET": "@auth_secret",
-    "VERCEL_ENV": "production"
-  },
   "git": {
     "deploymentEnabled": {
       "main": true
