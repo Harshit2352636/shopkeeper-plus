@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/kennedyodhiambo/Desktop/canvas/shopkeeper-plus/apps/web/src/app/layout\":[\"static/media/07ce98f0c2830616-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
