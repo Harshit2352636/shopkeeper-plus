@@ -3,8 +3,6 @@
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "nextjs",
-  "rootDirectory": "apps/web",
-  "nodeVersion": "20.x",
   "env": [
     {
       "key": "POSTGRES_URL",
