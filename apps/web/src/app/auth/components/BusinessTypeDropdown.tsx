@@ -15,6 +15,11 @@ type DropdownProps = {
    error?: string
 }
 
+interface BusinessType {
+  businessTypeId: string;
+  businessTypeName: string;
+}
+
 export default function BusinessTypeDropdown({ onSelect, error }: DropdownProps) {
    const { data: businessTypes } = api.businessTypes.listBusinessTypes.useQuery()
 
@@ -26,7 +31,7 @@ export default function BusinessTypeDropdown({ onSelect, error }: DropdownProps)
                <SelectValue placeholder="Select" />
             </SelectTrigger>
             <SelectContent position="popper">
-               {businessTypes?.map((type) => (
+               {businessTypes?.map((type: BusinessType) => (
                   <SelectItem key={type.businessTypeId} value={type.businessTypeId}>
                      {type.businessTypeName}
                   </SelectItem>
