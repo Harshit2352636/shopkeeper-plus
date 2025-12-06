@@ -1,13 +1,10 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "pnpm build",
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "nextjs",
-  "projectSettings": {
-    "rootDirectory": "apps/web",
-    "nodeVersion": "20.x"
-  },
+  "rootDirectory": "apps/web",
+  "nodeVersion": "20.x",
   "env": [
     {
       "key": "POSTGRES_URL",
