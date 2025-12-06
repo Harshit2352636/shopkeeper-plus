@@ -1,5 +1,9 @@
 {
   "buildCommand": "pnpm run build",
   "devCommand": "pnpm dev",
-  "env": ["POSTGRES_URL", "POSTGRES_PASSWORD", "AUTH_SECRET"]
+  "env": {
+    "POSTGRES_URL": "@postgres_url",
+    "POSTGRES_PASSWORD": "@postgres_password",
+    "AUTH_SECRET": "@auth_secret"
+  }
 }
