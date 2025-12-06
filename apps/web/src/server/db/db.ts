@@ -7,15 +7,13 @@ const connectionString = process.env.POSTGRES_URL as string
 let client: any
 let db: any
 
-if (!process.env.VERCEL_ENV || process.env.VERCEL_ENV === 'development') {
+if (process.env.NODE_ENV !== 'development' && !connectionString) {
+  // During build, export dummy objects
+  client = null
+  db = null
+} else if (connectionString) {
   client = postgres(connectionString, { prepare: false })
   db = drizzle(client)
-} else if (process.env.VERCEL_ENV === 'production') {
-  // Only create connection in production runtime, not build time
-  if (connectionString) {
-    client = postgres(connectionString, { prepare: false })
-    db = drizzle(client)
-  }
 }
 
 export { client, db }
