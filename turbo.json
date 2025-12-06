@@ -1,6 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["POSTGRES_URL"],
+  "globalEnv": [
+    "POSTGRES_URL",
+    "POSTGRES_PASSWORD",
+    "AUTH_SECRET"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
