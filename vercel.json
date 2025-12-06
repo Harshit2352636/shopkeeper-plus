@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm dev",
+  "env": ["POSTGRES_URL", "POSTGRES_PASSWORD", "AUTH_SECRET"]
+}

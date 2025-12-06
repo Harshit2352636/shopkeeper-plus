@@ -9,7 +9,8 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**"],
+      "env": ["SKIP_ENV_VALIDATION=1"]
     },
     "lint": {
       "dependsOn": ["^lint"]
